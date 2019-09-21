@@ -1,0 +1,244 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "spacing";
+
+@import url('https://fonts.googleapis.com/css?family=Alice|Zilla+Slab:400,700&display=swap');
+
+body {
+    color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+
+    @include media-breakpoint-up(md) {
+        font-size: 80px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+
+    @include media-breakpoint-up(md) {
+        font-size: 60px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+
+    @include media-breakpoint-up(md) {
+        font-size: 40px;
+    }
+}
+
+header {
+
+    nav.navbar {
+        z-index: 15;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        .navbar-brand {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 26px;
+            text-transform: uppercase;
+
+            em {
+                font-family: 'Alice', serif;
+            }
+        }
+
+        .nav-item {
+            font-family: 'Alice', serif;
+        }
+    }
+}
+
+.section-hero {
+    margin-top: 65px;
+
+    .overlay {
+        color: #fff;
+        position: absolute;
+        z-index: 12;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding-left: 3px;
+        padding-right: 3px;
+
+        @include media-breakpoint-up(md) {
+            top: 25%;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    h1 {
+        margin-top: 96px;
+        font-family: 'Zilla Slab', serif;
+
+        em {
+            font-family: 'Alice', serif;
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        opacity: 0.7;
+        font-family: 'Alice', serif;
+    }
+
+    img {
+        opacity: 0.7;
+
+        @include media-breakpoint-up(md) {
+            height: 100% !important;
+        }
+    }
+
+    background: #000;
+}
+
+.section-counter {
+    color: rgba(255, 255, 255, .5);
+    font-family: "Zilla Slab", serif;
+    text-transform: uppercase;
+    background: #b1b881;
+
+
+    .counter {
+        font-size: 72px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-family: Alice, serif;
+        opacity: 1;
+        color: #fff;
+    }
+
+    .counter-title {
+        letter-spacing: .2em;
+    }
+
+}
+
+.section-groom-and-bride {
+    color: #8b8e94;
+    line-height: 1.7;
+    font-size: 18px;
+    font-family: Alice, serif;
+
+    img {
+        border-radius: 50%;
+        border: 10px solid #fff;
+        width: 100%;
+    }
+
+    h2 {
+        font-family: 'Zilla Slab', serif;
+        color: #b1b881;
+        font-family: 'Alice', serif;
+        font-weight: 700;
+
+    }
+
+    .caption {
+        color: rgba(0, 0, 0, .2);
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+        font-family: "Zilla Slab", serif;
+        font-weight: 700;
+        letter-spacing: .1em;
+    }
+}
+
+.section-when-and-where {
+    background: #b1b881;
+
+    h2 {
+        font-family: "Zilla Slab", serif;
+        font-weight: 700;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+}
+
+.section-gallery {
+    h2 {
+        color: #b1b881;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+    }
+
+    .flex-column {
+        max-width: 260px;
+    }
+
+    .probootstrap-image {
+        display: block;
+        overflow: hidden;
+        height: 200px;
+        border-radius: 7px;
+        margin-bottom: 30px;
+        background-size: cover;
+        background-position: center center;
+
+        @include media-breakpoint-up(md) {
+            height: 300px;
+        }
+    }
+
+    .probootstrap-image.height-2x {
+        height: 200px;
+
+        @include media-breakpoint-up(md) {
+            height: 630px;
+        }
+
+    }
+
+    .scale {
+        transform: scaleY(1.05);
+        padding-top: 5px;
+    }
+}
+
+.section-rsvp {
+    font-family: Alice, serif;
+
+    h2 {
+        color: #b1b881;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Alice', serif;
+        color: #8b8e94;
+    }
+
+    form {
+        color: rgb(0, 0, 0);
+    }
+
+    .border-green {
+        padding: 40px;
+        border: 2px solid #b1b881;
+    }
+}
+
+footer {
+    background: #b1b881;
+}
