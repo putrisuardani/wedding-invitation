@@ -240,8 +240,15 @@ header {
 }
 
 .section-comment {
-    h3, p {
-        color: #000;
+
+    p {
+        color: #8b8e94;
+        font-family: 'Alice', serif;
+    }
+
+    h3.demo {
+        font-family: 'Zilla Slab', serif;
+        color: #8b8e94;
     }
 }
 
