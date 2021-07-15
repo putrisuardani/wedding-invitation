@@ -1,7 +1,7 @@
 AOS.init();
 
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 20, 2019 16:00:00").getTime();
+var countDownDate = new Date("Oct 21, 2025 16:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
